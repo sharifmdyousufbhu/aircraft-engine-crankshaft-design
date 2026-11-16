@@ -1,0 +1,59 @@
+
+--- 01_natural_frequencies.py ---
+TWO-INERTIA NATURAL FREQUENCIES (REPORT INPUTS)
+Mode 1: 859.411 rad/s  (136.779 Hz)
+Mode 2: 2249.967 rad/s  (358.093 Hz)
+These values are for an idealized two-inertia model only.
+
+--- 02_engine_rotation.py ---
+ENGINE ROTATIONAL SPEED
+Engine speed: 6800 rpm
+Angular speed: 712.0943 rad/s
+Rotational frequency: 113.3333 Hz
+Excitation harmonics are not assessed in this conversion.
+
+--- 03_shaft_torsional_stiffness.py ---
+IDEAL CIRCULAR SHAFT TORSIONAL STIFFNESS
+Polar second moment: 6.135923152e-07 m^4
+Torsional stiffness: 327249.235 N*m/rad
+
+--- 04_piston_inertia.py ---
+PISTON: IDEAL SOLID CYLINDER
+Mass: 0.595824 kg
+Inertia about cylinder axis: 0.000386094 kg*m^2
+Inertia about shifted parallel axis: 0.095717919 kg*m^2
+Example offset is an assumption, not a verified engine measurement.
+
+--- 05_connecting_rod_inertia.py ---
+CONNECTING ROD: RECTANGULAR MASS, SLENDER-ROD INERTIA
+Mass: 0.162600 kg
+Approximate inertia about center: 0.000135500 kg*m^2
+Approximate inertia about shifted axis: 0.040785500 kg*m^2
+Example geometry and offset are not verified engine measurements.
+
+--- 06_counterweight_inertia.py ---
+COUNTERWEIGHT: IDEAL SOLID CYLINDER
+Mass: 0.913025 kg
+Inertia about cylinder axis: 0.000285320 kg*m^2
+Inertia about shifted parallel axis: 0.001746161 kg*m^2
+
+--- 07_crank_arm_inertia.py ---
+CRANK ARM: RECTANGULAR MASS, SLENDER-ROD INERTIA
+Mass: 0.510570 kg
+Approximate end-axis inertia: 0.000633277 kg*m^2
+The report's 0.010 m offset is not modeled by this idealization.
+
+--- 08_equivalent_inertia_report.py ---
+EQUIVALENT INERTIA: REPORT ARITHMETIC ONLY
+Report formula result: 0.1692394 kg*m^2
+This reproduces the report's subtraction; it is not a validated dynamic model.
+The component values here are not the recalculated values in scripts 04-07.
+
+--- 09_torsional_stress.py ---
+IDEAL SOLID-SHAFT TORSIONAL STRESS
+Torque: 57.0 N*m
+Polar second moment: 6.135923152e-07 m^4
+Nominal torsional shear stress: 2.322 MPa
+Report's simple tensile-endurance/shear-stress ratio: 183.0
+The ratio is not a valid fatigue safety assessment for this crankshaft.
+Combined stresses, fatigue criteria and service conditions require engineering review.
